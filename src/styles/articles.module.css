@@ -1,0 +1,31 @@
+.cardArticle {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: rgb(21, 21, 21) !important;
+  border-radius: 8px !important;
+  transition: ease-in-out 500ms;
+}
+.cardArticle:hover {
+  -webkit-transform: scale(1.1) rotate(0.01deg);
+  transform: scale(1.1) rotate(0.01deg);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  cursor: pointer;
+}
+.cardArticleTitle {
+  font-size: 22px !important;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 13px;
+}
+.cardArticleBody {
+  color: #fff;
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: start;
+  padding: 3px;
+}

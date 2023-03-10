@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "title": "What is Lorem Ipsum?",
+      "contentSnipet": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "createdAt": null,
+      "updatedAt": null
+    },
+    {
+      "title": "Why do we use it?",
+      "contentSnipet": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "createdAt": null,
+      "updatedAt": null
+    },
+    {
+      "title": "Where does it come from?",
+      "contentSnipet": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "createdAt": null,
+      "updatedAt": null
+    }
+  ]
+}
