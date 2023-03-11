@@ -16,7 +16,7 @@ export default function SearchResultArticle({ results }) {
                   {result.title}
                 </Card.Title>
                 <Card.Text className={styles.cardArticleBody}>
-                  {result.contentSnipet}
+                  {`${result.contentSnipet.slice(0, 120)}...`}
                 </Card.Text>
               </Card.Body>
             </Card>

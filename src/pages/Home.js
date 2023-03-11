@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "../components/box/Box";
 import BoxTitle from "../components/box/BoxTitle";
 import BoxSubheading from "../components/box/BoxSubheading";
@@ -7,14 +7,21 @@ import SearchArticle from "../components/articles/SearchArticle";
 import SearchResultArticle from "../components/articles/SearchResultArticle";
 import Loading from "../components/shared/Loading";
 import Message from "../components/shared/Message";
+import Button from "../components/shared/Button";
 
 export default function Home({
   articles,
-  isLoading,
   searchArticle,
   setSearchArticle,
   result,
 }) {
+  const [isLoading, setIsloading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsloading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
       {isLoading && <Loading title="Sedang memuat..." />}
@@ -34,6 +41,7 @@ export default function Home({
               searchArticle={searchArticle}
               setSearchArticle={setSearchArticle}
             />
+            <Button name="Tambah artikel baru" urlRedirect="/articles/new" />
           </div>
 
           {!articles.length && <Message message="Belum Menulis Artikel." />}

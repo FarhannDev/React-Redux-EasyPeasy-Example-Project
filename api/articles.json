@@ -1,22 +1,50 @@
 {
   "articles": [
     {
-      "title": "What is Lorem Ipsum?",
-      "contentSnipet": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "createdAt": null,
-      "updatedAt": null
+      "title": "Apa itu Laravel dan fungsinya?",
+      "contentSnipet": "Laravel merupakan framework yang dapat membantu web developer dalam memaksimalkan penggunaan PHP dalam proses pengembangan website. Seperti diketahui, PHP sendiri merupakan bahasa pemograman yang cukup dinamis. Dimana kehadiran Laravel kemudian membuat PHP menjadi lebih powerful, cepat, aman, dan simple. Laravel merupakan framework yang dapat membantu web developer dalam memaksimalkan penggunaan PHP dalam proses pengembangan website. Seperti diketahui, PHP sendiri merupakan bahasa pemograman yang cukup dinamis. Dimana kehadiran Laravel kemudian membuat PHP menjadi lebih powerful, cepat, aman, dan simple. ",
+      "id": "lf2h2nwx23fbtppcu",
+      "createdAt": "2023-03-10T11:46:31.185Z",
+      "updatedAt": "2023-03-10T11:46:31.185Z"
     },
     {
-      "title": "Why do we use it?",
-      "contentSnipet": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "createdAt": null,
-      "updatedAt": null
+      "title": "Kenapa kita menggunakan Laravel?",
+      "contentSnipet": "Sebab, Laravel memberikan tools yang tepat untuk membantu membangun website dan aplikasi web lebih cepat, stabil, dan sangat mudah dirawat. Laravel menghilangkan semua masalah yang terkait dengan penanganan kode PHP yang kompleks.",
+      "id": "lf2h797t1wddj6v97",
+      "updatedAt": "2023-03-11T07:38:44.077Z"
     },
     {
-      "title": "Where does it come from?",
-      "contentSnipet": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      "createdAt": null,
-      "updatedAt": null
+      "title": "Konsep apa yang digunakan dalam Laravel?",
+      "contentSnipet": "Framework Laravel menggunakan struktur MVC (Model View Controller). MVC merupakan model aplikasi yang memisahkan antara data dan tampilan berdasarkan komponen aplikasi. Dengan adanya model MVC, pengguna Laravel menjadi lebih mudah dalam mempelajari Laravel.",
+      "id": "lf3jwcrz2q9atbv5a",
+      "createdAt": "2023-03-11T05:53:21.839Z",
+      "updatedAt": "2023-03-11T05:53:21.839Z"
+    },
+    {
+      "title": "Siapa yang membuat Laravel ed",
+      "contentSnipet": "Laravel adalah framework berbasis PHP yang dibangun dengan konsep MVC (model, view, controller), yang dikembangkan oleh Taylor Otwell pada tahun 2011.",
+      "id": "lf3jzq9j28xjecc57",
+      "updatedAt": "2023-03-11T07:38:58.300Z"
+    },
+    {
+      "title": "Laravel 8 harus PHP berapa?",
+      "contentSnipet": "Cara membuat CRUD Laravel 8 dapat menggunakan fitur Eloquent ORM. Untuk menginstalnya, Anda harus menyiapkan PHP versi 7.3 atau di atasnya, XAMPP atau sejenisnya, dan kode editor (Visual Studio Code).",
+      "id": "lf3k7xwl1ogogoy3n",
+      "createdAt": "2023-03-11T06:02:22.437Z",
+      "updatedAt": "2023-03-11T06:02:22.437Z"
+    },
+    {
+      "title": "Apakah Laravel butuh XAMPP",
+      "contentSnipet": "Pertama, kita tidak butuh menjalankan web server Apache bawaan XAMPP, karena yang sedang berjalan saat ini adalah server internal bawaan PHP. Kedua, karena tidak perlu menjalankan Apache bawaan XAMPP, maka sebenarnya kita tidak harus menginstall Laravel di folder htdocs",
+      "id": "lf3k9kkcobps4w28",
+      "updatedAt": "2023-03-11T07:42:13.123Z"
+    },
+    {
+      "title": "Axios react send data post",
+      "contentSnipet": "Lorem ipsum dolor sit amet",
+      "id": "lf3kjthy1z5gfxn59",
+      "createdAt": "2023-03-11T06:11:36.598Z",
+      "updatedAt": "2023-03-11T06:11:36.598Z"
     }
   ]
 }

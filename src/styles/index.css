@@ -25,6 +25,12 @@ input {
   font-weight: 400;
   color: #fff !important;
 }
+textarea {
+  background-color: transparent !important;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff !important;
+}
 
 .loader {
   position: fixed;
@@ -67,4 +73,17 @@ input {
   width: 100%;
   height: auto;
   margin-top: 5rem;
+}
+
+.button-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10000;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 12px !important;
+  font-size: 20px;
+  padding: 10px !important;
 }
