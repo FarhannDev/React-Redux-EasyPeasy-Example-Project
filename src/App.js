@@ -6,7 +6,7 @@ import Layout from "./components/shared/Layout";
 import Container from "./components/shared/Container";
 import Home from "./pages/Home";
 import ArticlesDetails from "./pages/articles/ArticlesDetails";
-import PageNotFound from "./pages/pageNotFound/PageNotFound";
+import PageNotFound from "./components/PageNotFound";
 import ArticleAdd from "./components/articles/ArticleAdd";
 
 export default function App() {
