@@ -19,10 +19,9 @@ export default function useAxiosFetch(dataUrl) {
         isMounted && setFetchError(error.message);
         setData([]);
       } finally {
-        isMounted &&
-          setTimeout(() => {
-            setIsloading(false);
-          }, 2000);
+        setTimeout(() => {
+          isMounted && setIsloading(false);
+        }, 1500);
       }
     };
 

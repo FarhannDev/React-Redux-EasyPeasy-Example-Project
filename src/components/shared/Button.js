@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function Button({ name, icon = "", urlRedirect = "/" }) {
   return (
-    <Link to={urlRedirect} className="button-action btn btn-lg btn-danger">
-      {name}
+    <Link
+      aria-label={name}
+      title={name}
+      to={urlRedirect}
+      className="button-action btn btn-lg btn-danger"
+    >
       <i className={icon}></i>
     </Link>
   );

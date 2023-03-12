@@ -1,19 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./utils/reportWebVitals";
-
-// Include styles
 import "./styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { StoreProvider } from "easy-peasy";
+import store from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Route path="/" component={App} />
-    </Router>
+    <StoreProvider store={store}>
+      <Router>
+        <Route path="/" component={App} />
+      </Router>
+    </StoreProvider>
   </React.StrictMode>
 );
 
