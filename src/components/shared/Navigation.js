@@ -14,7 +14,7 @@ export default function Navigation() {
       >
         <Container>
           <Link to="/" className="navbar-brand">
-            React JS Blog
+            Navbar
           </Link>
         </Container>
       </Navbar>

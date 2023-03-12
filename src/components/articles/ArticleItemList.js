@@ -8,7 +8,7 @@ export default function ArticleItemList({ articles }) {
     <>
       <div className="col-xl-6 col-md-6 col-sm-12">
         <Link
-          to={`/articles/${articles.id}`}
+          to={`/article/${articles.id}`}
           className="text-decoration-none"
           aria-label="Selengkapnya"
         >

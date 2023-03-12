@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Box from "../../components/box/Box";
-import BoxTitle from "../../components/box/BoxTitle";
+import React, { useEffect, useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
+import DataContext from "../context/DataContext";
 import axios from "axios";
 import Swal from "sweetalert2";
-import ArticleAdd from "../../components/articles/ArticleAdd";
-import Loading from "../../components/shared/Loading";
+import Box from "../components/box/Box";
+import BoxTitle from "../components/box/BoxTitle";
+import Loading from "../components/shared/Loading";
+import CreateArticle from "../components/articles/CreateArticle";
 
-export default function ArticlesAdd({ articles, setArticles }) {
+export default function AddNewArticle() {
+  const { articles, setArticles, isLoading, fetchError } =
+    useContext(DataContext);
   const [limit, setLimit] = useState("");
   const history = useHistory();
   const [state, setState] = useState({
@@ -15,22 +18,14 @@ export default function ArticlesAdd({ articles, setArticles }) {
     contentSnipet: "",
   });
 
-  const [isLoading, setIsloading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsloading(false);
-    }, 1000);
-  }, []);
-
   useEffect(() => {
     if (state.title.length) {
       setLimit(50);
     }
   }, [limit, state.title]);
 
-  const onSubmitChangeHandler = async (e) => {
+  const onSubmitHandler = async (e) => {
     e.preventDefault();
-
     if (!state.title || !state.contentSnipet)
       Swal.fire({
         icon: "error",
@@ -56,15 +51,14 @@ export default function ArticlesAdd({ articles, setArticles }) {
         newArticle
       );
       // setArticles([...articles, response.data]);
+      setArticles([...articles, response.data]);
       Swal.fire({
         icon: "success",
         title: "Berhasil",
         text: "Berhasil menambahkan artikel",
       });
 
-      setTimeout(() => {
-        history.push("/");
-      }, 300);
+      history.push("/");
     } catch (error) {
       console.log(error.message);
     }
@@ -72,18 +66,19 @@ export default function ArticlesAdd({ articles, setArticles }) {
 
   return (
     <>
-      {isLoading && <Loading title="Sedang memuat..." />}
-      {!isLoading && (
+      {fetchError && <Loading title={fetchError} />}
+      {isLoading && !fetchError && <Loading title="Sedang memuat..." />}
+      {!isLoading && !fetchError && (
         <Box>
           <div className="row justify-content-center">
             <div className="col-lg-7 col-sm-12 col-md-10">
               <div className="pt-5">
                 <BoxTitle title="Tambah daftar artikel" />
-                <ArticleAdd
+                <CreateArticle
                   state={state}
                   setState={setState}
                   limit={limit}
-                  onSubmitHandler={onSubmitChangeHandler}
+                  onSubmitHandler={onSubmitHandler}
                 />
               </div>
             </div>

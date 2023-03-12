@@ -3,12 +3,12 @@ import { Card } from "react-bootstrap";
 import styles from "../../styles/articles.module.css";
 import Message from "../shared/Message";
 
-export default function SearchResultArticle({ results }) {
+export default function SearchResultArticle({ result }) {
   return (
     <>
-      {!results.length && <Message message="Artikel tidak ditemukan." />}
+      {!result.length && <Message message="Artikel tidak ditemukan." />}
       <div className="row justify-content-arround">
-        {results.map((result, index) => (
+        {result.map((result, index) => (
           <div key={index} className="col-xl-6 col-md-6 col-sm-12">
             <Card className={styles.cardArticle}>
               <Card.Body>

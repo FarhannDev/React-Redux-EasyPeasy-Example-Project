@@ -11,18 +11,15 @@ export default function ArticleAdd({
   setState,
   onSubmitHandler,
   limit,
+  isLoading,
+  fetchError,
 }) {
   const inputRef = useRef();
-  const [isLoading, setIsloading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsloading(false);
-    }, 1000);
-  }, []);
   return (
     <>
-      {isLoading && <Loading title="Sedang memuat..." />}
-      {!isLoading && (
+      {fetchError && <Loading title={fetchError} />}
+      {isLoading && !fetchError && <Loading title="Sedang memuat..." />}
+      {!isLoading && !fetchError && (
         <Box>
           <div className="row justify-content-center">
             <div className="col-lg-7 col-sm-12 col-md-10">
